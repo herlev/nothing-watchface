@@ -1,0 +1,26 @@
+{
+  "name": "nothing-watchface",
+  "author": "herlev",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "nothing-watchface",
+    "uuid": "ca9f7fbe-66ec-48c6-a9ec-a10c8804f80d",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [ ]
+    }
+  }
+}
