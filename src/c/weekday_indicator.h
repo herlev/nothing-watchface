@@ -7,8 +7,6 @@ void draw_weekday_indicator_center(
     GContext *ctx, uint8_t weekday, uint8_t y, NdotFont *font, GColor8 color,
     GColor8 active_color
 ) {
-  // int16_t spacing_x = 13;
-  // int16_t center_x = bounds.size.w / 2 + 1;
   uint8_t w = font->dot_width;
   uint8_t x_center = PBL_DISPLAY_WIDTH / 2 - w / 2 + 1;
   uint8_t spacing = (w + font->dot_spacing) * 4;
@@ -17,9 +15,5 @@ void draw_weekday_indicator_center(
     graphics_fill_rect(
         ctx, GRect(x_center + (-3 + i) * spacing, y, w, w), w / 2 - 1, 0b1111
     );
-    // graphics_fill_circle(
-    //     ctx, GPoint(center_x + (-3 + i) * spacing_x, bounds.size.h / 2 + 30),
-    //     2
-    // );
   }
 }
